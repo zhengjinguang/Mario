@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/tips_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/tips_layout"/>
+
+    <ImageView
+        android:id="@+id/empty_view"
+        android:layout_width="@dimen/mario_248dp"
+        android:layout_height="@dimen/mario_360dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/empty_games"
+        android:visibility="gone"
+        android:scaleType="fitXY"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="@dimen/mario_1100dp"
+        android:layout_height="@dimen/mario_482dp"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/mario_30sp"
+        android:id="@+id/category_detail_page_num"
+        android:layout_marginTop="@dimen/mario_30dp"
+        android:layout_marginLeft="@dimen/mario_50dp"
+        android:visibility="gone"
+        />
+
+    <ProgressBar
+        android:id="@+id/load_more_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:focusable="true"
+        android:indeterminateDrawable="@drawable/loading_progressbar"/>
+
+    <ImageView
+        android:id="@+id/category_detail_pre_screen_button"
+        android:layout_width="@dimen/mario_120dp"
+        android:layout_height="@dimen/mario_20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/mario_30dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:src="@drawable/category_detail_up_arrow_selector"/>
+
+    <ImageView
+        android:id="@+id/category_detail_next_screen_button"
+        android:layout_width="@dimen/mario_120dp"
+        android:layout_height="@dimen/mario_20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/mario_30dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:src="@drawable/category_detail_down_arrow_selector"/>
+
+</RelativeLayout>

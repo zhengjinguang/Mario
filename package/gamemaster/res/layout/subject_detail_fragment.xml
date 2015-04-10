@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.lemi.mario.image.view.AsyncImageView
+        android:id="@+id/subject_detail_poster"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <include
+        android:id="@+id/tips_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/tips_layout" />
+
+    <RelativeLayout
+        android:id="@+id/subject_detail_recycle_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mario_200dp"
+        android:layout_below="@id/tips_view"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/mario_15dp"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/subject_detail_pre_screen_button"
+            android:layout_width="@dimen/mario_13dp"
+            android:layout_height="@dimen/mario_80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/mario_75dp"
+            android:visibility="invisible"
+            android:src="@drawable/subject_detail_left_arrow_selector" />
+
+        <ImageView
+            android:id="@+id/subject_detail_next_screen_button"
+            android:layout_width="@dimen/mario_13dp"
+            android:layout_height="@dimen/mario_80dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/mario_75dp"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            android:src="@drawable/subject_detail_right_arrow_selector" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_view"
+            android:layout_width="@dimen/mario_1022dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mario_110dp"
+            android:layout_marginRight="@dimen/mario_110dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

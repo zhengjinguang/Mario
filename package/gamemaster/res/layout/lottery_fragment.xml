@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lottery_background">
+
+    <TextView
+        android:id="@+id/lottery_awards_title"
+        android:layout_width="@dimen/mario_250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/mario_100dp"
+        android:text="@string/lottery_awards"
+        android:layout_marginRight="@dimen/mario_30dp"
+        android:textSize="@dimen/mario_25sp"/>
+    <com.lemi.controller.lemigameassistance.view.AlwaysMarqueeTextView
+        android:id="@+id/lottery_awards"
+        android:layout_width="@dimen/mario_250dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/mario_30dp"
+        android:layout_below="@id/lottery_awards_title"
+        android:textSize="@dimen/mario_30sp"/>
+    <TextView
+        android:id="@+id/lottery_uid"
+        style="@style/lottery_user"
+        android:layout_marginTop="@dimen/mario_50dp"
+        android:text="@string/account_id" />
+
+    <TextView
+        android:id="@+id/lottery_nick"
+        style="@style/lottery_user"
+        android:layout_below="@id/lottery_uid"
+        android:text="@string/account_nick" />
+
+    <Button
+        android:id="@+id/lottery_getawards"
+        android:layout_width="@dimen/mario_210dp"
+        android:layout_height="@dimen/mario_77dp"
+        android:layout_below="@id/lottery_nick"
+        android:layout_marginTop="@dimen/mario_20dp"
+        android:layout_marginLeft="@dimen/mario_45dp"
+        android:background="@drawable/lottery_awards_selector" />
+
+    <Button
+        android:id="@+id/lottery_draw"
+        android:layout_width="@dimen/mario_189dp"
+        android:layout_height="@dimen/mario_77dp"
+        android:layout_below="@id/lottery_getawards"
+        android:layout_marginTop="@dimen/mario_50dp"
+        android:layout_marginLeft="@dimen/mario_50dp"
+        android:background="@drawable/lottery_draw_selector" />
+
+    <ImageView
+        android:id="@+id/lottery_dumpling_10"
+        android:layout_width="@dimen/mario_128dp"
+        android:layout_height="@dimen/mario_87dp"
+        android:layout_marginTop="@dimen/mario_245dp"
+        android:layout_marginLeft="@dimen/mario_750dp"
+        android:background="@drawable/lottery_dumpling" />
+
+    <ImageView
+        android:id="@+id/lottery_dumpling_11"
+        android:layout_width="@dimen/mario_128dp"
+        android:layout_height="@dimen/mario_87dp"
+        android:layout_marginTop="@dimen/mario_225dp"
+        android:layout_marginLeft="@dimen/mario_660dp"
+        android:background="@drawable/lottery_dumpling" />
+
+    <ImageView
+        android:id="@+id/lottery_dumpling_12"
+        android:layout_width="@dimen/mario_128dp"
+        android:layout_height="@dimen/mario_87dp"
+        android:layout_marginTop="@dimen/mario_225dp"
+        android:layout_marginLeft="@dimen/mario_560dp"
+        android:background="@drawable/lottery_dumpling"/>
+
+    <ImageView
+        android:id="@+id/lottery_dumpling_13"
+        android:layout_width="@dimen/mario_128dp"
+        android:layout_height="@dimen/mario_87dp"
+        android:layout_marginTop="@dimen/mario_225dp"
+        android:layout_marginLeft="@dimen/mario_460dp"
+        android:background="@drawable/lottery_dumpling_selected" />
+
+    <ImageView
+        android:id="@+id/lottery_dumpling_20"
+        android:layout_width="@dimen/mario_128dp"
+        android:layout_height="@dimen/mario_87dp"
+        android:layout_marginTop="@dimen/mario_265dp"
+        android:layout_marginLeft="@dimen/mario_660dp"
+        android:background="@drawable/lottery_dumpling" />
+
+    <ImageView
+        android:id="@+id/lottery_dumpling_21"
+        android:layout_width="@dimen/mario_128dp"
+        android:layout_height="@dimen/mario_87dp"
+        android:layout_marginTop="@dimen/mario_265dp"
+        android:layout_marginLeft="@dimen/mario_560dp"
+        android:background="@drawable/lottery_dumpling" />
+
+    <ImageView
+        android:id="@+id/lottery_dumpling_22"
+        android:layout_width="@dimen/mario_128dp"
+        android:layout_height="@dimen/mario_87dp"
+        android:layout_marginTop="@dimen/mario_265dp"
+        android:layout_marginLeft="@dimen/mario_460dp"
+        android:background="@drawable/lottery_dumpling" />
+
+    <ImageView
+        android:id="@+id/lottery_dumpling_23"
+        android:layout_width="@dimen/mario_128dp"
+        android:layout_height="@dimen/mario_87dp"
+        android:layout_marginTop="@dimen/mario_270dp"
+        android:layout_marginLeft="@dimen/mario_370dp"
+        android:background="@drawable/lottery_dumpling" />
+
+    <ImageView
+        android:id="@+id/lottery_dumpling_30"
+        android:layout_width="@dimen/mario_128dp"
+        android:layout_height="@dimen/mario_87dp"
+        android:layout_marginTop="@dimen/mario_285dp"
+        android:layout_marginLeft="@dimen/mario_750dp"
+        android:background="@drawable/lottery_dumpling" />
+    <ImageView
+        android:id="@+id/lottery_dumpling_31"
+        android:layout_width="@dimen/mario_128dp"
+        android:layout_height="@dimen/mario_87dp"
+        android:layout_marginTop="@dimen/mario_315dp"
+        android:layout_marginLeft="@dimen/mario_660dp"
+        android:background="@drawable/lottery_dumpling" />
+
+    <ImageView
+        android:id="@+id/lottery_dumpling_32"
+        android:layout_width="@dimen/mario_128dp"
+        android:layout_height="@dimen/mario_87dp"
+        android:layout_marginTop="@dimen/mario_315dp"
+        android:layout_marginLeft="@dimen/mario_560dp"
+        android:background="@drawable/lottery_dumpling" />
+
+    <ImageView
+        android:id="@+id/lottery_dumpling_33"
+        android:layout_width="@dimen/mario_128dp"
+        android:layout_height="@dimen/mario_87dp"
+        android:layout_marginTop="@dimen/mario_315dp"
+        android:layout_marginLeft="@dimen/mario_460dp"
+        android:background="@drawable/lottery_dumpling" />
+
+    <ImageView
+        android:id="@+id/lottery_chopsticks_10"
+        android:layout_width="@dimen/mario_188dp"
+        android:layout_height="@dimen/mario_196dp"
+        android:layout_marginTop="@dimen/mario_50dp"
+        android:layout_marginLeft="@dimen/mario_820dp"
+        android:visibility="invisible"
+        android:background="@drawable/lottery_chopsticks" />
+
+    <ImageView
+        android:id="@+id/lottery_chopsticks_11"
+        android:layout_width="@dimen/mario_188dp"
+        android:layout_height="@dimen/mario_196dp"
+        android:layout_marginTop="@dimen/mario_30dp"
+        android:layout_marginLeft="@dimen/mario_730dp"
+        android:visibility="invisible"
+        android:background="@drawable/lottery_chopsticks" />
+
+    <ImageView
+        android:id="@+id/lottery_chopsticks_12"
+        android:layout_width="@dimen/mario_188dp"
+        android:layout_height="@dimen/mario_196dp"
+        android:layout_marginTop="@dimen/mario_30dp"
+        android:layout_marginLeft="@dimen/mario_630dp"
+        android:visibility="invisible"
+        android:background="@drawable/lottery_chopsticks"/>
+
+    <ImageView
+        android:id="@+id/lottery_chopsticks_13"
+        android:layout_width="@dimen/mario_188dp"
+        android:layout_height="@dimen/mario_196dp"
+        android:layout_marginTop="@dimen/mario_30dp"
+        android:layout_marginLeft="@dimen/mario_530dp"
+        android:background="@drawable/lottery_chopsticks" />
+
+    <ImageView
+        android:id="@+id/lottery_chopsticks_20"
+        android:layout_width="@dimen/mario_188dp"
+        android:layout_height="@dimen/mario_196dp"
+        android:layout_marginTop="@dimen/mario_70dp"
+        android:layout_marginLeft="@dimen/mario_730dp"
+        android:visibility="invisible"
+        android:background="@drawable/lottery_chopsticks" />
+
+    <ImageView
+        android:id="@+id/lottery_chopsticks_21"
+        android:layout_width="@dimen/mario_188dp"
+        android:layout_height="@dimen/mario_196dp"
+        android:layout_marginTop="@dimen/mario_70dp"
+        android:layout_marginLeft="@dimen/mario_630dp"
+        android:visibility="invisible"
+        android:background="@drawable/lottery_chopsticks" />
+
+    <ImageView
+        android:id="@+id/lottery_chopsticks_22"
+        android:layout_width="@dimen/mario_188dp"
+        android:layout_height="@dimen/mario_196dp"
+        android:layout_marginTop="@dimen/mario_70dp"
+        android:layout_marginLeft="@dimen/mario_530dp"
+        android:visibility="invisible"
+        android:background="@drawable/lottery_chopsticks" />
+
+    <ImageView
+        android:id="@+id/lottery_chopsticks_23"
+        android:layout_width="@dimen/mario_188dp"
+        android:layout_height="@dimen/mario_196dp"
+        android:layout_marginTop="@dimen/mario_75dp"
+        android:layout_marginLeft="@dimen/mario_440dp"
+        android:visibility="invisible"
+        android:background="@drawable/lottery_chopsticks" />
+
+    <ImageView
+        android:id="@+id/lottery_chopsticks_30"
+        android:layout_width="@dimen/mario_188dp"
+        android:layout_height="@dimen/mario_196dp"
+        android:layout_marginTop="@dimen/mario_90dp"
+        android:layout_marginLeft="@dimen/mario_820dp"
+        android:visibility="invisible"
+        android:background="@drawable/lottery_chopsticks" />
+    <ImageView
+        android:id="@+id/lottery_chopsticks_31"
+        android:layout_width="@dimen/mario_188dp"
+        android:layout_height="@dimen/mario_196dp"
+        android:layout_marginTop="@dimen/mario_120dp"
+        android:layout_marginLeft="@dimen/mario_730dp"
+        android:visibility="invisible"
+        android:background="@drawable/lottery_chopsticks" />
+
+    <ImageView
+        android:id="@+id/lottery_chopsticks_32"
+        android:layout_width="@dimen/mario_188dp"
+        android:layout_height="@dimen/mario_196dp"
+        android:layout_marginTop="@dimen/mario_120dp"
+        android:layout_marginLeft="@dimen/mario_630dp"
+        android:visibility="invisible"
+        android:background="@drawable/lottery_chopsticks" />
+
+    <ImageView
+        android:id="@+id/lottery_chopsticks_33"
+        android:layout_width="@dimen/mario_188dp"
+        android:layout_height="@dimen/mario_196dp"
+        android:layout_marginTop="@dimen/mario_120dp"
+        android:layout_marginLeft="@dimen/mario_530dp"
+        android:visibility="invisible"
+        android:background="@drawable/lottery_chopsticks" />
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lemi.controller.lemigameassistance.recycleview.item.CategoryItem
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:columnSpacing="@dimen/_40dp"
+    app:minLineSpacing="@dimen/_35dp"
+    android:layout_width="@dimen/mario_1024dp"
+    android:layout_height="@dimen/mario_498dp"
+    android:layout_marginRight="@dimen/_20dp"
+    android:layout_marginLeft="@dimen/_20dp"
+    app:maxColumns="4"
+    />

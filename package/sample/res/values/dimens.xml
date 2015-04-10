@@ -1,0 +1,25 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!-- CardItemContainer -->
+    <dimen name="card_item_container_paddingTop">20dp</dimen>
+    <dimen name="card_item_container_paddingBottom">20dp</dimen>
+    <dimen name="card_item_container_columnSpace">25dp</dimen>
+    <dimen name="card_item_container_minLineSpace">10dp</dimen>
+    <dimen name="card_item_container_scrollMargin">100dp</dimen>
+
+
+    <!-- recommend -->
+    <dimen name="recommend_large_width">316dp</dimen>
+    <dimen name="recommend_large_height">517dp</dimen>
+    <dimen name="recommend_little_width">259dp</dimen>
+    <dimen name="recommend_little_height">165dp</dimen>
+    <dimen name="recommend_padding_little">18dp</dimen>
+    <dimen name="recommend_padding">22dp</dimen>
+    <dimen name="recommend_normal_width">280dp</dimen>
+    <dimen name="recommend_normal_height">258dp</dimen>
+
+</resources>

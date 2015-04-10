@@ -1,0 +1,237 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <!--
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+
+    Application theme.
+    <style name="AppTheme" parent="AppBaseTheme">
+        All customizations that are NOT specific to a particular API-level can go here.
+    </style>
+    -->
+
+    <style name="AppTheme" parent="android:Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="StartupTheme" parent="@style/AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="DialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="MyProgressBarStyleHorizontal" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:minHeight">@dimen/mario_100dp</item>
+        <item name="android:maxHeight">@dimen/mario_100dp</item>
+        <item name="android:focusable">false</item>
+        <item name="android:progressDrawable">
+            @drawable/download_unzip_horizontal_progress_drawable_selector
+        </item>
+    </style>
+
+
+    <style name="tab_strip">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="dividerColor">@color/transparent</item>
+        <item name="dividerPadding">@dimen/mario_0dp</item>
+        <item name="tabPaddingLeftRight">@dimen/mario_15dp</item>
+        <item name="shouldExpand">true</item>
+        <item name="tabTextSize">@dimen/mario_16sp</item>
+        <item name="tabTextColor">@color/black</item>
+        <item name="indicatorColor">@color/green</item>
+        <item name="indicatorHeight">@dimen/mario_4dp</item>
+        <item name="underlineHeight">@dimen/mario_0dp</item>
+    </style>
+
+
+    <style name="tab_strip_explore">
+        <item name="android:background">@color/transparent</item>
+        <item name="dividerColor">@color/transparent</item>
+        <item name="dividerPadding">@dimen/mario_0dp</item>
+        <item name="tabPaddingLeftRight">@dimen/mario_15dp</item>
+        <item name="shouldExpand">true</item>
+        <item name="indicatorHeight">@dimen/mario_0dp</item>
+        <item name="underlineHeight">@dimen/mario_0dp</item>
+        <item name="tabBackground">@drawable/tab_indicator</item>
+        <item name="tabTextSize">@dimen/mario_35sp</item>
+        <item name="tabTextColor">@drawable/selector_tabtext</item>
+    </style>
+
+
+    <!--this Spacing in-order to get inner view space so it will decrease card (padding + margin) * 2-->
+    <style name="settings_card_item_container">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="columnSpacing">@dimen/_45dp</item>
+        <item name="minLineSpacing">@dimen/_60dp</item>
+        <item name="maxColumns">10</item>
+    </style>
+
+
+    <style name="large_settings_button">
+        <item name="android:layout_width">@dimen/mario_246dp</item>
+        <item name="android:layout_height">@dimen/mario_481dp</item>
+        <item name="android:background">@drawable/settings_large_card_selector</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:padding">@dimen/mario_16dp</item>
+        <item name="android:layout_margin">@dimen/mario_20dp</item>
+        <item name="scaleInX">1.09</item>
+        <item name="scaleInY">1.09</item>
+        <item name="needBringToFrontParentTreeIndex">1</item>
+    </style>
+
+    <style name="little_settings_button">
+        <item name="android:layout_width">@dimen/mario_246dp</item>
+        <item name="android:layout_height">@dimen/mario_246dp</item>
+        <item name="android:background">@drawable/settings_little_card_selector</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:padding">@dimen/mario_16dp</item>
+        <item name="android:layout_margin">@dimen/mario_20dp</item>
+        <item name="scaleInX">1.15</item>
+        <item name="scaleInY">1.15</item>
+        <item name="needBringToFrontParentTreeIndex">1</item>
+    </style>
+
+
+    <!--this Spacing in-order to get inner view space so it will decrease card (padding + margin) * 2-->
+    <style name="recommend_card_item_container">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="columnSpacing">@dimen/_50dp</item>
+        <item name="minLineSpacing">@dimen/_60dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="maxColumns">10</item>
+    </style>
+
+
+    <style name="large_recommend_button">
+        <item name="android:layout_width">@dimen/mario_315dp</item>
+        <item name="android:layout_height">@dimen/mario_509dp</item>
+        <item name="android:background">@drawable/recommend_large_card_selector</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:padding">@dimen/mario_16dp</item>
+        <item name="android:layout_margin">@dimen/mario_20dp</item>
+        <item name="scaleInX">1.09</item>
+        <item name="scaleInY">1.09</item>
+        <item name="needBringToFrontParentTreeIndex">1</item>
+    </style>
+
+    <style name="little_recommend_button">
+        <item name="android:layout_width">@dimen/mario_263dp</item>
+        <item name="android:layout_height">@dimen/mario_177dp</item>
+        <item name="android:background">@drawable/recommend_little_card_selector</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:padding">@dimen/mario_16dp</item>
+        <item name="android:layout_margin">@dimen/mario_20dp</item>
+        <item name="scaleInX">1.15</item>
+        <item name="scaleInY">1.15</item>
+        <item name="needBringToFrontParentTreeIndex">1</item>
+    </style>
+
+    <style name="subject_image_view">
+        <item name="android:layout_width">@dimen/mario_374dp</item>
+        <item name="android:layout_height">@dimen/mario_248dp</item>
+        <item name="android:padding">@dimen/mario_15dp</item>
+        <item name="android:layout_margin">@dimen/mario_20dp</item>
+        <item name="android:background">@drawable/subject_card_selector</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="scaleInX">1.1</item>
+        <item name="scaleInY">1.1</item>
+        <item name="needBringToFrontParentTreeIndex">1</item>
+    </style>
+
+    <style name="subject_detail_game_item_layout">
+        <item name="android:layout_width">@dimen/mario_150dp</item>
+        <item name="android:layout_height">@dimen/mario_170dp</item>
+        <item name="android:padding">@dimen/mario_12dp</item>
+        <item name="android:layout_margin">@dimen/mario_10dp</item>
+        <item name="android:background">@drawable/game_item_selector</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="scaleInX">1.1</item>
+        <item name="scaleInY">1.1</item>
+        <item name="needBringToFrontParentTreeIndex">1</item>
+    </style>
+
+    <style name="category_detail_game_item_layout">
+        <item name="android:layout_width">@dimen/mario_200dp</item>
+        <item name="android:layout_height">@dimen/mario_220dp</item>
+        <item name="android:padding">@dimen/mario_12dp</item>
+        <item name="android:layout_margin">@dimen/mario_10dp</item>
+        <item name="android:background">@drawable/game_item_selector</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="scaleInX">1.1</item>
+        <item name="scaleInY">1.1</item>
+        <item name="needBringToFrontParentTreeIndex">1</item>
+    </style>
+
+    <style name="category_item_layout">
+        <item name="android:layout_width">@dimen/mario_256dp</item>
+        <item name="android:layout_height">@dimen/mario_209dp</item>
+        <item name="android:layout_margin">@dimen/mario_20dp</item>
+        <item name="android:background">@drawable/category_item_selector</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="scaleInX">1.1</item>
+        <item name="scaleInY">1.1</item>
+        <item name="needBringToFrontParentTreeIndex">1</item>
+    </style>
+
+    <style name="account_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/mario_82dp</item>
+        <item name="android:layout_marginLeft">@dimen/mario_50dp</item>
+        <item name="android:textSize">@dimen/mario_35sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="account_text">
+        <item name="android:layout_width">@dimen/mario_392dp</item>
+        <item name="android:layout_height">@dimen/mario_82dp</item>
+        <item name="android:layout_marginLeft">@dimen/mario_10dp</item>
+        <item name="android:paddingLeft">@dimen/mario_20dp</item>
+        <item name="android:paddingRight">@dimen/mario_20dp</item>
+        <item name="android:layout_toRightOf">@id/account_nick_title</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/mario_30sp</item>
+        <item name="android:background">@drawable/account_text_selector</item>
+        <item name="android:nextFocusLeft">@id/account_change_gender</item>
+    </style>
+    <style name="lottery_user">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/mario_60dp</item>
+        <item name="android:layout_marginLeft">@dimen/mario_50dp</item>
+        <item name="android:textSize">@dimen/mario_30sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lemi_background"
+    >
+
+    <RelativeLayout
+        android:id="@+id/title_container"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/mario_36dp"
+        android:layout_marginLeft="@dimen/mario_54dp"
+        android:layout_marginRight="@dimen/mario_57dp"
+        android:layout_marginTop="@dimen/mario_51dp"
+        >
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/game_detail_normal"
+            android:textSize="@dimen/mario_30sp" />
+
+        <include
+            layout="@layout/main_title"
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/main_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mario_2dp"
+        android:layout_marginLeft="@dimen/mario_30dp"
+        android:layout_marginRight="@dimen/mario_30dp"
+        android:layout_marginTop="@dimen/mario_10dp"
+        android:background="@drawable/main_title_line"/>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

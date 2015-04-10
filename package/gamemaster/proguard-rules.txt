@@ -1,0 +1,155 @@
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in /Users/Issac/bin/android-sdk-macosx/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+
+
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-verbose
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+-ignorewarnings
+-printseeds
+
+-keepattributes *Annotation*
+-keepattributes InnerClasses
+-keepattributes Signature
+
+-assumenosideeffects class android.util.Log{
+    public static int v(...);
+    public static int i(...);
+    public static int w(...);
+    public static int d(...);
+    public static int e(...);
+    public static boolean isLoggable(java.lang.String, int);
+}
+
+-assumenosideeffects class * extends java.lang.Throwable {
+    public void printStackTrace();
+}
+
+
+-dontwarn android.support.**
+-dontwarn android.net.http.SslError
+-dontwarn android.webkit.WebViewClient
+-dontwarn com.umeng.**
+-dontwarn org.jboss.netty.**
+
+
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+-keep public class * extends android.view.View
+-keep public class * extends android.os.IInterface
+-keep class android.media.* { *; }
+-keep public class com.android.internal.telephony.* { *; }
+-keep public class android.os.storage.* { *; }
+-keep public class android.content.pm.* { *; }
+-keep public class * extends android.support.v4.app.Fragment
+-keep public class * extends android.app.Fragment
+
+
+-keep class android.support.v4.** { *; }
+-keep class android.support.v7.** { *; }
+-keep class com.actionbarsherlock.** { *; }
+-keep interface com.actionbarsherlock.** { *; }
+-keep class com.nineoldandroids.** { *; }
+-keep interface com.nineoldandroids.** { *; }
+-keep class com.twmacinta.util.MD5State {*;}
+
+
+-keep class sun.misc.Unsafe { *; }
+-keep class com.google.gson.** { *; }
+-keep class com.google.gson.stream.** { *; }
+-keep class com.google.gson.examples.android.model.** { *; }
+
+
+-keep  class com.umeng.*.** {*; }
+-keep public class com.umeng.fb.ui.ThreadView {
+}
+
+
+
+-keepclasseswithmembers class * {
+    native <methods>;
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keep class * implements android.os.Parcelable {
+    public static final android.os.Parcelable$Creator *;
+}
+
+-keep class * implements java.io.Serializable {
+    *;
+}
+
+-keep class *.R
+
+-keepclasseswithmembers class **.R$* {
+    public static <fields>;
+}
+
+-keep public class android.net.http.SslError{
+    *;
+}
+
+-keep public class android.webkit.WebViewClient{
+    *;
+}
+
+-keep public class android.webkit.WebChromeClient{
+    *;
+}
+
+-keep public interface android.webkit.WebChromeClient$CustomViewCallback {
+    *;
+}
+
+-keep public interface android.webkit.ValueCallback {
+    *;
+}
+
+-keep class * implements android.webkit.WebChromeClient {
+    *;
+}
+
+-keep class * extends com.squareup.wire.Message {
+    *;
+}
+-keep class * extends com.squareup.wire.Message$Builder {
+    *;
+}
+-keep class * extends com.squareup.wire.Message.Builder {
+    *;
+}
+

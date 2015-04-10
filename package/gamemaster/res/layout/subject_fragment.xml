@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <com.lemi.controller.lemigameassistance.view.VerticalCardContainer
+        android:id="@+id/subject_card_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mario_20dp"
+        android:layout_marginRight="@dimen/mario_20dp"
+        app:minColumnSpacing="@dimen/_40dp"
+        app:lineSpacing="@dimen/_40dp"
+        app:maxLines="3"/>
+
+
+    <include
+        android:id="@+id/tips_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/tips_layout"/>
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MyActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="launch"
+        android:id="@+id/launch_log"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="quit"
+        android:id="@+id/quit_log"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="connect controller"
+        android:id="@+id/controller_log"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="click button"
+        android:id="@+id/button_log"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="enter page"
+        android:id="@+id/enter_page_log"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="exit page"
+        android:id="@+id/exit_page_log"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="download_complete"
+        android:id="@+id/download_log"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start game"
+        android:id="@+id/start_game_log"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="quit game"
+        android:id="@+id/quit_game_log"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp" />
+
+</LinearLayout>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">乐米游戏厅</string>
+
+    <!-- welcome -->
+    <string name="loading_tip">小提示：</string>
+    <!-- main -->
+    <string name="new_version_dialog">发现一大波好玩的游戏正在袭来</string>
+    <string name="dialog_update">更新</string>
+    <string name="dialog_ok">立即升级</string>
+    <string name="updating">版本后台更新中…</string>
+    <string name="updating_download_failed">新版本后台下载失败，请重试</string>
+    <string name="checking_upgrade">检查更新中…</string>
+    <string name="dialog_cancel">就是不升</string>
+    <string name="loading_timeout">数据加载超时，请检查网络连接</string>
+    <string name="mine">我的游戏</string>
+    <string name="newgame">最新游戏</string>
+    <string name="hots">热门排行</string>
+    <string name="about">关于</string>
+    <string name="check_version">检查新版本</string>
+    <string name="version_newest">当前已是最新版本</string>
+    <!-- space clear -->
+    <string name="space_clear">空间清理</string>
+    <string name="space_tip">清理垃圾数据，优化磁盘空间</string>
+    <string name="clear">清理</string>
+    <string name="clearing">清理中%s</string>
+    <string name="no_garbage">恭喜您，没有找到垃圾数据</string>
+    <string name="clear_space">成功为您清理%sM磁盘空间</string>
+    <string name="clear_error">清理失败，请稍后重试</string>
+    <!-- sdcard -->
+    <string name="sdcard_tip">开启后游戏将默认安装到外挂SD卡</string>
+    <string name="external_sdcard">外挂SD卡</string>
+    <string name="sdcard_start">启用</string>
+    <string name="sdcard_stop">停用</string>
+    <string name="sdcard_title">使用外挂SD卡有风险</string>
+    <string name="sdcard_none">请插入SD卡，并检查SD卡是否为FAT32格式</string>
+    <string name="sdcard_msg_restore_system">温馨提示：若之前已启用过SD外挂功能，可点击“恢复”并重启系统恢复系统存储</string>
+    <string name="sdcard_restore_system">恢复</string>
+    <string name="sdcard_start_msg">1.确认SD卡文件系统为FAT格式，如果不是请格式化后使用\n2.确认SD卡可写，即没有打开SD卡上的lock锁功能\n3.热插拔SD卡有数据丢失的风险，请确认在本页面中停用后再拔出\n4.恢复出厂设置会清除SD卡所有文件，请确认重要文件没有放在SD卡上\n5.目前实测支持的SD卡大小为8G，16G，32G\n</string>
+    <string name="sdcard_copying">数据复制中，请稍侯…</string>
+    <string name="sdcard_copying_time">数据复制中，大约需要%s分钟，请稍侯…</string>
+    <string name="sdcard_error">SD卡无法读写，请检查是否已打开lock锁</string>
+    <string name="sdcard_no_space">SD卡空间不足，建议使用空间8G以上的SD卡</string>
+    <string name="sdcard_not_format">请将SD卡格式化为FAT32格式后重试</string>
+    <string name="sdcard_using_sucess">数据复制完成，请重新插拔SD卡完成外挂</string>
+    <string name="sdcard_start_sucess">外挂SD卡已成功启用</string>
+    <string name="sdcard_copy_failed">数据复制失败，请重试</string>
+    <string name="sdcard_rm_title">请确认是否停用外挂SD卡？</string>
+    <string name="sdcard_rm_msg">停用外挂SD卡后,必须重启系统，在重启前将无法继续挂载</string>
+    <string name="uninstall_system_app">无法卸载系统应用</string>
+    <!-- google frame service -->
+    <string name="google_frame">谷歌服务</string>
+    <string name="google_frame_tip">开启后即可畅玩需要谷歌认证的游戏</string>
+    <string name="google_frame_installed">已安装</string>
+    <string name="google_frame_uninstalled">未安装</string>
+    <string name="google_frame_uninstall">卸载</string>
+    <string name="google_frame_install_tip">安装谷歌框架后将自动重启电视，请确认是否继续？</string>
+    <string name="google_frame_uninstall_tip">卸载谷歌框架后将自动重启电视，请确认是否继续？</string>
+    <string name="google_frame_installing">谷歌框架安装中，稍后电视将自动重启</string>
+    <string name="google_frame_uninstalling">谷歌框架卸载中，稍后电视将自动重启</string>
+
+    <!-- download -->
+    <string name="download_cancel_download">取消下载</string>
+    <string name="download_cancel_unzip">取消解压</string>
+    <string name="cancel_downloading">真的要取消下载\"%s\"吗？</string>
+    <string name="cancel_extracting">真的要取消解压压缩文件吗？</string>
+
+    <!-- game detail -->
+    <string name="game_detail_title">游戏详情</string>
+    <string name="game_detail_no_data">游戏数据不存在</string>
+    <string name="game_detail_state_pre_download">下载</string>
+    <string name="game_detail_state_download_wait">等待下载</string>
+    <string name="game_detail_state_downloading">下载中%s</string>
+    <string name="downloading_tip">后台下载中，\n可先逛逛其他游戏</string>
+    <string name="add_external_storage">系统空间不足，解压后需%s MB，可通过外挂SD卡扩展空间，请去管理设置中启用\n</string>
+    <string name="game_detail_state_pre_extract">解压</string>
+    <string name="game_detail_state_extract_wait">等待解压</string>
+    <string name="game_detail_state_extracting">解压中%s</string>
+    <string name="cancel_extracting_tips">温馨提示：取消解压后，已解压文件将被删除节省存储空间</string>
+    <string name="dialogok">确定</string>
+    <string name="dialogcancel">取消</string>
+    <string name="ok">是</string>
+    <string name="cancel">否</string>
+    <string name="game_extracting_info">解压中，请稍侯…</string>
+    <string name="game_detail_state_pre_install">安装</string>
+    <string name="game_detail_state_install_wait">等待安装</string>
+    <string name="game_detail_state_installing">安装中%s</string>
+    <string name="game_detail_state_wait_to_start">启动</string>
+
+    <!--net button-->
+    <string name="net_button_install">安装</string>
+    <string name="net_button_downloading">下载中</string>
+    <string name="net_button_pause">暂停下载</string>
+    <string name="net_button_resume">继续下载</string>
+    <string name="net_button_retry">重试</string>
+    <string name="net_button_unziping">解压中</string>
+    <string name="net_button_installing">安装中</string>
+    <string name="net_button_open">启动</string>
+    <string name="net_button_app_is_uninstall">应用已经被删除，请重新安装</string>
+
+
+    <!--install notify-->
+    <string name="notify_install_sucess">\"%s\"安装成功</string>
+    <string name="notify_install_failed">\"%s\"安装失败</string>
+
+
+    <!-- game_msg -->
+    <string name="game_name">游戏名</string>
+    <string name="game_palypode">类型：%s</string>
+    <string name="game_size">大小：%s</string>
+    <string name="game_download_total">下载：%d 次</string>
+    <string name="game_operation">操作：</string>
+    <string name="game_hot">热度</string>
+    <string name="game_notice">注意事项：</string>
+    <string name="game_depiction">游戏介绍：</string>
+    <string name="game_playmode_single">单机</string>
+    <string name="game_playmode_online">联网</string>
+    <string name="game_personmode_single">单人</string>
+    <string name="game_personmode_double">双人</string>
+    <string name="game_personmode_many">多人</string>
+    <string name="game_operate_controlpanel">遥控器</string>
+    <string name="game_operate_mouse">鼠标</string>
+    <string name="game_operate_gamepad">手柄</string>
+
+    <!-- toast info -->
+    <string name="dialog_got_it">我知道了</string>
+    <string name="dialog_open">启动</string>
+    <string name="dialog_uninstall">卸载</string>
+    <string name="dialog_detail">详情</string>
+    <string name="app_exit_tips">再按一次退出(游戏继续后台%s中)</string>
+    <string name="app_exit_msg">再按一次退出</string>
+    <string name="can_not_read_external_storage">外接磁盘无法读写，请检查</string>
+    <string name="can_not_read_local_storage">系统繁忙，请稍侯重试</string>
+    <string name="can_not_read_mounted_storage">外挂SD卡无法写入，请检查是否插入或者重启系统重试</string>
+    <string name="can_not_read_local_storage_x60">磁盘无法写入，稍侯重试或确定是否停用SD卡后未重启电视</string>
+    <string name="not_enough_extract_storage">解压空间不足，至少需要%s</string>
+    <string name="data_load">数据加载中，请稍侯…</string>
+    <string name="subject_none">没有专题数据！</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!--tips-->
+    <string name="tips_button">点击重试</string>
+
+    <!--explore-->
+    <string name="explore_tab_subject">专题</string>
+    <string name="explore_tab_recommend">推荐</string>
+    <string name="explore_tab_category">分类</string>
+    <string name="explore_tab_settings">管理</string>
+
+
+    <!--download-->
+    <string name="open_network_connect">无法连接到网络，请开启你的网络连接</string>
+    <string name="no_enough_storage_to_download_tips">当前SD卡存储空间不足，无法完成任务，请先整理一下资源再重试?</string>
+    <string name="media_or_file_error">噢哦，SD 卡没有接好或者空间不足，请你检查后再重试</string>
+    <string name="no_enough_storage_to_install_tips">噢哦，系统空间不足，无法安装</string>
+    <string name="no_enough_storage_unzip_tips">噢哦，解压空间不足</string>
+    <string name="no_enough_storage_to_download_in_udisk_tips">噢哦，当前SD卡，U盘存储空间均不足，请先清理一下再试</string>
+    <string name="no_write_permission">外置储存无写入权限，请检查</string>
+    <string name="download_to_external_storage">游戏文件将被下载到外置储存设备中，请勿移除</string>
+
+    <!--download failed & pause reason-->
+    <string name="download_error_failed">\"%s\"下载失败</string>
+    <string name="download_error_no_enough_space">没有足够的空间，请整理空间后继续下载\"%s\"</string>
+    <string name="download_error_no_write_permission">外置储存无写入权限，请检查后继续下载\"%s\"</string>
+    <string name="download_error_media_error">外置储存异常，请检查后继续下载\"%s\"</string>
+    <string name="download_error_network_error">无法连接到网络，请开启网络连接后继续下载\"%s\"</string>
+
+    <!--unzip failed reason-->
+    <string name="unzip_error_failed">解压\"%s\"失败，请检查存储卡，或者重启</string>
+    <string name="unzip_cancel_by_user">\"%s\"任务已取消，文件已删除</string>
+
+    <!-- subject content detail -->
+    <string name="download_count_unit">万</string>
+    <string name="gamemodel_to_gameinfo_failed">数据解析失败</string>
+    <string name="no_game_data">没有游戏数据</string>
+
+    <!--settings-->
+    <string name="settings_download_manage_title">下载管理</string>
+    <string name="settings_uninstall_manage_title">卸载</string>
+    <string name="settings_account_title">账号</string>
+    <string name="settings_setting_title">设置</string>
+    <string name="settings_about_title">关于</string>
+
+    <!--download manage cancel-->
+    <string name="download_manage_cancel">取消</string>
+
+    <!--switcher-->
+    <string name="switcher_null" />
+    <string name="switcher_clean">清理</string>
+    <string name="switcher_cleaning">清理中</string>
+    <string name="switcher_cleaning_tips">正在清理中，请稍候</string>
+
+    <!--category load more-->
+    <string name="category_detail_load_more">加载下一页失败，请检查网络后重试</string>
+
+    <!--net work error-->
+    <string name="network_not_available">您的网速不太给力，请稍后重试</string>
+
+    <string name="account_id">用户ID:&#160;</string>
+    <string name="account_nick">昵称:&#160;</string>
+    <string name="account_phone">手机:</string>
+    <string name="account_email">邮箱:</string>
+    <string name="account_label">Mario</string>
+    <string name="account_phone_hint">请输入11位手机号码</string>
+    <string name="account_info_complete">100%完善账号信息后每天可增加一次抽奖机会</string>
+    <string name="change_userinfo_success">修改用户信息成功</string>
+    <string name="change_userinfo_fail">修改用户信息失败：</string>
+    <string name="draw_lottery_dialog_ok">知道了</string>
+    <string name="lottery_no_awards">您暂时没有获奖记录</string>
+    <string name="account_login_dialog">账号尚未登录，现在是否需要登录？</string>
+    <string name="account_auth_invalidate_dialog">令牌已过期，现在是否需要重新登录？</string>
+    <string name="account_login_ok">登录</string>
+    <string name="account_login_cancel">取消</string>
+    <string name="account_logining">账号登录中，请稍后...</string>
+    <string name="account_login_success">账号登录成功</string>
+    <string name="account_login_failed">账号登录失败：尚未注册</string>
+    <string name="account_register_failed">账号注册失败</string>
+    <string name="account_nick_null">昵称不能为空</string>
+    <string name="account_phone_null">手机号码不能为空</string>
+    <string name="account_email_null">邮箱不能为空</string>
+    <string name="account_phone_wrong">手机号码格式错误</string>
+    <string name="account_email_wrong">邮箱输入格式错误</string>
+    <string name="lottery_none">暂无活动，敬请期待～</string>
+    <string name="lottery_awards">最新中奖信息：</string>
+
+    <string name="awards_gamepad">北通手柄</string>
+    <string name="awards_doll">羊年玩偶</string>
+    <string name="awards_sdcard">16GSD卡</string>
+    <string name="awards_red_envelope">支付宝现金红包</string>
+</resources>

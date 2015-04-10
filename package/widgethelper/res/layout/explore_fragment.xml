@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fragment_background">
+
+    <ImageView
+        android:layout_width="@dimen/mario_160dp"
+        android:layout_height="@dimen/mario_45dp"
+        android:src="@drawable/explore_title"
+        android:layout_marginTop="@dimen/mario_44dp"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/mario_135dp"
+        android:layout_marginLeft="@dimen/mario_88dp">
+
+        <ImageView
+            android:id="@+id/explore_mount_card"
+            style="@style/explore_valid_card"
+            android:src="@drawable/explore_mount_card" />
+
+        <ImageView
+            android:id="@+id/explore_more_card"
+            style="@style/explore_invalid_card"
+            android:src="@drawable/explore_more_card" />
+
+        <ImageView
+            style="@style/explore_invalid_card"
+            android:src="@drawable/explore_block_card" />
+
+        <ImageView
+            style="@style/explore_invalid_card"
+            android:src="@drawable/explore_block_card" />
+
+        <ImageView
+            style="@style/explore_invalid_card"
+            android:src="@drawable/explore_block_card" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

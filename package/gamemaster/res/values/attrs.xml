@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="reference|color"/>
+        <attr name="roundProgressColor" format="reference|color"/>
+        <attr name="roundWidth" format="dimension"/>
+        <attr name="textColor" format="reference|color"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="max" format="integer"/>
+        <attr name="textIsDisplayable" format="boolean"/>
+        <attr name="hasSpecialBackground" format="boolean"/>
+        <attr name="style">
+            <enum name="STROKE" value="0"/>
+            <enum name="FILL" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ScaleView">
+        <attr name="scaleInX" format="float"/>
+        <attr name="scaleInY" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="TextClock">
+        <attr name="format12Hour" format="string"/>
+        <attr name="format24Hour" format="string"/>
+        <attr name="timeZone" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="VerticalCardContainer">
+        <attr name="lineSpacing" format="dimension"/>
+        <attr name="minColumnSpacing" format="dimension"/>
+        <attr name="maxLines" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="NetAppButton">
+        <attr name="state_install" format="boolean"/>
+        <attr name="state_downloading" format="boolean"/>
+        <attr name="state_pause" format="boolean"/>
+        <attr name="state_resume" format="boolean"/>
+        <attr name="state_retry" format="boolean"/>
+        <attr name="state_unziping" format="boolean"/>
+        <attr name="state_installing" format="boolean"/>
+        <attr name="state_open" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="DownloadUnzipRoundBar">
+        <attr name="state_download" format="boolean"/>
+        <attr name="state_unzip" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="HorizontalCardContainer">
+        <attr name="columnSpacing" format="dimension"/>
+        <attr name="minLineSpacing" format="dimension"/>
+        <attr name="maxColumns" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="InnerScaleImageView">
+        <!--if this view need itself to bringToFront this value is 0;
+        if need getParent() to bringToFront this value is 1;
+        if need getParent().getParent() to bringToFront this value is 2, then so on...-->
+        <attr name="needBringToFrontParentTreeIndex" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="SwitcherView">
+        <attr name="state_switcher_on" format="boolean"/>
+        <attr name="state_switcher_off" format="boolean"/>
+        <attr name="state_switcher_clean_on" format="boolean"/>
+        <attr name="state_switcher_clean_off" format="boolean"/>
+    </declare-styleable>
+
+
+
+</resources>

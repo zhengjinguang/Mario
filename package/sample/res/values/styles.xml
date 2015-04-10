@@ -1,0 +1,72 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="CardItemContainer">
+        <item name="android:paddingTop">@dimen/card_item_container_paddingTop</item>
+        <item name="android:paddingBottom">@dimen/card_item_container_paddingBottom</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="columnSpacing">@dimen/card_item_container_columnSpace</item>
+        <item name="minLineSpacing">@dimen/card_item_container_minLineSpace</item>
+        <item name="maxColumns">10</item>
+        <item name="scrollMargin">@dimen/card_item_container_scrollMargin</item>
+    </style>
+
+
+    <style name="large_recomend_button">
+        <item name="android:layout_width">@dimen/recommend_large_width</item>
+        <item name="android:layout_height">@dimen/recommend_large_height</item>
+        <item name="android:background">@drawable/recommend_selector</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@drawable/water_429_720</item>
+        <item name="xScale">1.09</item>
+        <item name="yScale">1.09</item>
+    </style>
+
+    <style name="little_recomend_button">
+        <item name="android:layout_width">@dimen/recommend_little_width</item>
+        <item name="android:layout_height">@dimen/recommend_little_height</item>
+        <item name="android:background">@drawable/recommend_selector_little</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@drawable/water_360_221</item>
+        <item name="xScale">1.15</item>
+        <item name="yScale">1.15</item>
+    </style>
+
+
+    <style name="normal_recomend_button">
+        <item name="android:layout_width">@dimen/recommend_normal_width</item>
+        <item name="android:layout_height">@dimen/recommend_normal_height</item>
+        <item name="android:background">@drawable/recommend_selector</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@drawable/water_429_720</item>
+        <item name="xScale">1.09</item>
+        <item name="yScale">1.09</item>
+    </style>
+
+    <style name="grid_recomend_button">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:background">@drawable/recommend_selector_little</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="xScale">1.15</item>
+        <item name="yScale">1.15</item>
+        <item name="xScaleParent">2</item>
+        <item name="yScaleParent">2</item>
+    </style>
+
+    <style name="grid_framelayout">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:background">@drawable/grid_item_layout_selector</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="xScale">2</item>
+        <item name="yScale">2</item>
+    </style>
+
+
+</resources>

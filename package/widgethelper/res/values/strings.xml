@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">乐助手</string>
+
+    <string name="mount_status_is_insert">已插入</string>
+    <string name="mount_status_is_fat32">FAT32</string>
+    <string name="mount_status_is_writable">可读写</string>
+    <string name="mount_complete">外挂成功</string>
+
+
+    <string name="mount_qr_code_tips">扫二维码购买SD卡</string>
+
+    <string name="mount_tips_not_support">您的设备暂时不支持外挂功能</string>
+    <string name="mount_tips_not_insert">请插入SD卡</string>
+    <string name="mount_tips_not_fat32">请把SD卡格式化为FAT32格式</string>
+    <string name="mount_tips_not_writable">请打开SD写保护锁</string>
+    <string name="mount_tips_not_enough_space">SD卡空间不足，请清理设备内存</string>
+    <string name="mount_tips_copy_failed">拷贝失败,请重试</string>
+
+    <string name="mount_tips_re_insert">请重新插拔SD卡或重启电视,完成绑定</string>
+    <string name="mount_tips_copying">正在拷贝中，请稍候</string>
+    <string name="mount_tips_process_duplicate">正在绑定中,请稍候</string>
+    <string name="mount_tips_process_already_complete">已经绑定完成,无需重复绑定</string>
+    <string name="mount_tips_process_not_complete">绑定过程未结束,避免系统不稳定,请勿退出</string>
+
+    <string name="mount_tips_start_surprise">击中彩蛋,解绑完成,请重启电视</string>
+
+    <string name="install_processing">正在安装中，请稍后</string>
+    <string name="install_canceling">将在完成当前安装后取消,请稍候</string>
+    <string name="install_others_processing">其他应用正在安装中,请稍候</string>
+
+    <string name="index_file_invalid">索引文件损坏或不存在</string>
+
+    <string name="install_all_index_not_found">没有找到乐米游戏SD卡,请重试</string>
+    <string name="install_all_complete">全部安装完成</string>
+    <string name="install_all_cancel">已取消</string>
+
+    <string name="install_no_space">安装失败，空间不足</string>
+    <string name="install_apk_not_found">安装失败，应用安装包不存在</string>
+    <string name="install_failed">安装失败</string>
+
+    <string name="install_game_installing">正在安装：%s</string>
+
+    <string name="mount_dialog_title">是否确认绑定SD卡</string>
+    <string name="mount_dialog_message">预计需要6–8分钟</string>
+
+    <string name="install_dialog_title">未完成绑定SD卡</string>
+    <string name="install_dialog_message">一键安装功能需要完成绑定SD卡</string>
+
+    <string name="dialog_ok">确定</string>
+    <string name="dialog_cancel">取消</string>
+
+
+</resources>

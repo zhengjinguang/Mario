@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<com.lemi.controller.lemigameassistance.view.SubjectCard
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.lemi.controller.lemigameassistance.view.InnerScaleAsyncImageView
+        android:id="@+id/subject_image"
+        style="@style/subject_image_view"
+        android:src="@drawable/subject_card_default"/>
+
+</com.lemi.controller.lemigameassistance.view.SubjectCard>

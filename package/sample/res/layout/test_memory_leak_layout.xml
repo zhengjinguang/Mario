@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.lemi.mario.image.view.AsyncImageView
+        android:id="@+id/a1"
+        android:layout_width="400dp"
+        android:layout_height="200dp" />
+
+    <com.lemi.mario.image.view.AsyncImageView
+        android:id="@+id/a2"
+        android:layout_width="400dp"
+        android:layout_height="200dp" />
+
+    <com.lemi.mario.image.view.AsyncImageView
+        android:id="@+id/a3"
+        android:layout_width="400dp"
+        android:layout_height="200dp" />
+
+    <com.lemi.mario.image.view.AsyncImageView
+        android:id="@+id/a4"
+        android:layout_width="400dp"
+        android:layout_height="200dp" />
+
+    <com.lemi.mario.image.view.AsyncImageView
+        android:id="@+id/a5"
+        android:layout_width="400dp"
+        android:layout_height="200dp" />
+
+    <com.lemi.mario.image.view.AsyncImageView
+        android:id="@+id/a6"
+        android:layout_width="400dp"
+        android:layout_height="200dp" />
+
+
+</LinearLayout>

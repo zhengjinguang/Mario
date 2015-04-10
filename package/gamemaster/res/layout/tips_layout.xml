@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.lemi.controller.lemigameassistance.view.TipsView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:id="@+id/tips_container">
+
+    <ImageView
+        android:id="@+id/tips_image"
+        android:layout_width="@dimen/mario_737dp"
+        android:layout_height="@dimen/mario_535dp"
+        android:src="@drawable/tips_loading"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:layout_width="@dimen/mario_147dp"
+        android:layout_height="@dimen/mario_67dp"
+        android:id="@+id/tips_refresh_button"
+        android:visibility="gone"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:text="@string/tips_button"
+        android:background="@drawable/tips_refresh_button_selector"
+        android:layout_alignBottom="@id/tips_image"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/mario_23sp"
+        android:layout_marginBottom="@dimen/mario_40dp"/>
+
+</com.lemi.controller.lemigameassistance.view.TipsView>

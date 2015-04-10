@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="dialog_big" type="style" />
+    <item name="dialog_normal" type="style" />
+    <item name="dialog_list" type="style" />
+    <item name="dialog_progress" type="style" />
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<account-authenticator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accountType="com.lemi.mario.account"
+    android:icon="@drawable/lemi_logo"
+    android:label="@string/account_label"
+    android:smallIcon="@drawable/lemi_logo" />

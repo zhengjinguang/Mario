@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/fragment_background">
+
+    <ImageView
+        android:id="@+id/back_button"
+        style="@style/back_button"/>
+
+    <LinearLayout
+        android:id="@+id/install_button_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/mario_91dp"
+        android:layout_marginLeft="@dimen/mario_95dp">
+
+        <com.lemi.mario.widget.helper.view.ActiveImageView
+            android:id="@+id/install_start_all"
+            android:layout_width="@dimen/mario_150dp"
+            android:layout_height="@dimen/mario_61dp"
+            android:padding="@dimen/mario_9dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/install_start_button_selector"
+            android:background="@drawable/install_button_focus_selector"
+            />
+
+        <com.lemi.mario.widget.helper.view.ActiveImageView
+            android:id="@+id/install_cancel"
+            android:layout_width="@dimen/mario_150dp"
+            android:layout_height="@dimen/mario_61dp"
+            android:padding="@dimen/mario_9dp"
+            android:layout_marginLeft="@dimen/mario_5dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/install_cancel_button_selector"
+            android:background="@drawable/install_button_focus_selector"
+            />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="@dimen/mario_1100dp"
+        android:layout_height="@dimen/mario_449dp"
+        android:layout_marginTop="@dimen/mario_11dp"
+        android:layout_below="@+id/install_button_container"
+        android:layout_centerHorizontal="true">
+
+        <ScrollView
+            android:id="@+id/install_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/install_game_container"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"/>
+
+        </ScrollView>
+
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/install_invalid_view"
+        android:visibility="gone"
+        android:layout_width="@dimen/mario_1100dp"
+        android:layout_height="@dimen/mario_308dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/mario_60dp"
+        android:layout_below="@+id/install_button_container"
+        android:src="@drawable/install_index_invalid"
+        />
+
+    <include
+        android:id="@+id/install_tips"
+        android:layout_width="@dimen/mario_424dp"
+        android:layout_height="@dimen/mario_76dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/mario_30dp"
+        layout="@layout/mount_tips_view"/>
+
+</RelativeLayout>

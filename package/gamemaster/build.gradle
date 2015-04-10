@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        debug {
+            storeFile file('wukong')
+            storePassword 'xiyou;2220329'
+            keyAlias 'wukong'
+            keyPassword 'xiyou;2220329'
+        }
+        release {
+            storeFile file('wukong')
+            storePassword 'xiyou;2220329'
+            keyAlias 'wukong'
+            keyPassword 'xiyou;2220329'
+        }
+    }
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    android {
+        lintOptions {
+            checkReleaseBuilds false
+            abortOnError false
+        }
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':external:tab')
+    compile project(':framework:base')
+    compile project(':framework:log')
+    compile project(':framework:udid')
+    compile project(':framework:image')
+    compile project(':framework:download')
+    compile project(':framework:download')
+    compile project(':framework:appmanager')
+    compile project(':framework:rpc')
+    compile project(':framework:mvc')
+    compile project(':package:componentmanager')
+    compile 'com.android.support:support-v4:21.0.0'
+    compile 'com.android.support:recyclerview-v7:21.0.3'
+    compile project(':framework:accountmanager')
+}

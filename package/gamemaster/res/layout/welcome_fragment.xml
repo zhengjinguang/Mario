@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.lemi.mario.image.view.AsyncImageView
+        android:id="@+id/welcome_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/startup"/>
+
+    <LinearLayout
+        android:id="@+id/welcome_tips_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/mario_150dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/welcome_tips_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loading_tip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mario_25sp" />
+
+        <TextView
+            android:id="@+id/welcome_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/mario_25sp" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/welcome_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/welcome_tips_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/mario_50dp"
+        android:indeterminateDrawable="@drawable/loading_progressbar"/>
+
+    <TextView
+        android:id="@+id/welcome_version_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/mario_20dp"
+        android:layout_marginRight="@dimen/mario_16dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/mario_25sp" />
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lemi.controller.lemigameassistance.view.SettingsItemView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="@dimen/mario_33dp"
+    android:layout_marginLeft="@dimen/mario_123dp"
+    android:layout_marginRight="@dimen/mario_123dp"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/mario_90dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mario_80dp"
+        android:layout_marginLeft="@dimen/mario_70dp"
+        android:layout_marginRight="@dimen/mario_30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/settings_detail_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/mario_36sp"/>
+
+            <TextView
+                android:id="@+id/settings_detail_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/unselected"
+                android:textSize="@dimen/mario_23sp"/>
+        </LinearLayout>
+
+        <com.lemi.controller.lemigameassistance.view.SwitcherView
+            android:id="@+id/settings_detail_switcher"
+            android:layout_width="@dimen/mario_125dp"
+            android:layout_height="@dimen/mario_77dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:focusable="true"
+            android:clickable="true"
+            android:background="@drawable/switcher_drawable_selector"
+            android:textSize="@dimen/mario_23sp"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mario_1dp"
+        android:layout_marginTop="@dimen/mario_5dp"
+        android:background="@color/unselected"/>
+
+</com.lemi.controller.lemigameassistance.view.SettingsItemView>

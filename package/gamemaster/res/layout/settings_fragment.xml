@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.lemi.controller.lemigameassistance.view.StaggeredHorizontalCardContainer
+        android:id="@+id/setting_card_container"
+        style="@style/settings_card_item_container"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.lemi.controller.lemigameassistance.view.InnerScaleImageView
+                android:id="@+id/account_button"
+                style="@style/large_settings_button"
+                android:src="@drawable/settings_account" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.lemi.controller.lemigameassistance.view.InnerScaleImageView
+                android:id="@+id/settings_button"
+                style="@style/large_settings_button"
+                android:src="@drawable/settings_setting" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.lemi.controller.lemigameassistance.view.InnerScaleImageView
+                android:id="@+id/download_manager_button"
+                style="@style/little_settings_button"
+                android:src="@drawable/settings_download" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.lemi.controller.lemigameassistance.view.InnerScaleImageView
+                android:id="@+id/uninstall_manage_button"
+                style="@style/little_settings_button"
+                android:src="@drawable/settings_uninstall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.lemi.controller.lemigameassistance.view.InnerScaleImageView
+                android:id="@+id/check_version_button"
+                style="@style/little_settings_button"
+                android:src="@drawable/settings_check_update" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.lemi.controller.lemigameassistance.view.InnerScaleImageView
+                android:id="@+id/about_button"
+                style="@style/little_settings_button"
+                android:src="@drawable/settings_about" />
+
+        </LinearLayout>
+
+    </com.lemi.controller.lemigameassistance.view.StaggeredHorizontalCardContainer>
+
+
+</RelativeLayout>

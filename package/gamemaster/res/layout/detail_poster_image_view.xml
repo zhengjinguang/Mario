@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.lemi.controller.lemigameassistance.view.DetailPosterView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/mario_503dp"
+    android:layout_height="@dimen/mario_299dp"
+    android:padding="@dimen/mario_19dp"
+    android:background="@drawable/detail_poster_selector"
+    android:focusable="true"
+    android:scaleType="fitXY"/>

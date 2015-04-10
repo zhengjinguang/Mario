@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CardItemContainer">
+        <attr name="columnSpacing" format="dimension" />
+        <attr name="minLineSpacing" format="dimension" />
+        <attr name="maxColumns" format="integer" />
+        <attr name="scrollMargin" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ScaleView">
+        <attr name="xScale" format="float" />
+        <attr name="yScale" format="float" />
+        <attr name="xScaleParent" format="float" />
+        <attr name="yScaleParent" format="float" />
+    </declare-styleable>
+
+
+</resources>

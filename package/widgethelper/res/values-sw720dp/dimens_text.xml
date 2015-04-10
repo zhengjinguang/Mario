@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--sp-->
+
+    <dimen name="mario_1sp">1sp</dimen>
+    <dimen name="mario_2sp">2sp</dimen>
+    <dimen name="mario_3sp">3sp</dimen>
+    <dimen name="mario_4sp">4sp</dimen>
+    <dimen name="mario_5sp">5sp</dimen>
+    <dimen name="mario_6sp">6sp</dimen>
+    <dimen name="mario_7sp">7sp</dimen>
+    <dimen name="mario_8sp">8sp</dimen>
+    <dimen name="mario_9sp">9sp</dimen>
+    <dimen name="mario_10sp">10sp</dimen>
+    <dimen name="mario_11sp">11sp</dimen>
+    <dimen name="mario_12sp">12sp</dimen>
+    <dimen name="mario_13sp">13sp</dimen>
+    <dimen name="mario_14sp">14sp</dimen>
+    <dimen name="mario_15sp">15sp</dimen>
+    <dimen name="mario_16sp">16sp</dimen>
+    <dimen name="mario_17sp">17sp</dimen>
+    <dimen name="mario_18sp">18sp</dimen>
+    <dimen name="mario_19sp">19sp</dimen>
+    <dimen name="mario_20sp">20sp</dimen>
+    <dimen name="mario_21sp">21sp</dimen>
+    <dimen name="mario_22sp">22sp</dimen>
+    <dimen name="mario_23sp">23sp</dimen>
+    <dimen name="mario_24sp">24sp</dimen>
+    <dimen name="mario_25sp">25sp</dimen>
+    <dimen name="mario_26sp">26sp</dimen>
+    <dimen name="mario_27sp">27sp</dimen>
+    <dimen name="mario_28sp">28sp</dimen>
+    <dimen name="mario_29sp">29sp</dimen>
+    <dimen name="mario_30sp">30sp</dimen>
+    <dimen name="mario_31sp">31sp</dimen>
+    <dimen name="mario_32sp">32sp</dimen>
+    <dimen name="mario_33sp">33sp</dimen>
+    <dimen name="mario_34sp">34sp</dimen>
+    <dimen name="mario_35sp">35sp</dimen>
+    <dimen name="mario_36sp">36sp</dimen>
+    <dimen name="mario_37sp">37sp</dimen>
+    <dimen name="mario_38sp">38sp</dimen>
+    <dimen name="mario_39sp">39sp</dimen>
+    <dimen name="mario_40sp">40sp</dimen>
+    <dimen name="mario_41sp">41sp</dimen>
+    <dimen name="mario_42sp">42sp</dimen>
+    <dimen name="mario_43sp">43sp</dimen>
+    <dimen name="mario_44sp">44sp</dimen>
+    <dimen name="mario_45sp">45sp</dimen>
+    <dimen name="mario_46sp">46sp</dimen>
+    <dimen name="mario_47sp">47sp</dimen>
+    <dimen name="mario_48sp">48sp</dimen>
+    <dimen name="mario_49sp">49sp</dimen>
+    <dimen name="mario_50sp">50sp</dimen>
+
+
+</resources>

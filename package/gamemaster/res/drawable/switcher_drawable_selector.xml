@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--focus-->
+    <item app:state_switcher_on="true"
+          android:state_focused="true"
+          android:drawable="@drawable/settings_switcher_on_focus"
+        />
+
+    <item app:state_switcher_off="true"
+          android:state_focused="true"
+          android:drawable="@drawable/settings_switcher_off_focus"
+        />
+
+    <item app:state_switcher_clean_on="true"
+          android:state_focused="true"
+          android:drawable="@drawable/settings_switcher_on_clear_focus"
+        />
+
+    <item app:state_switcher_clean_off="true"
+          android:state_focused="true"
+          android:drawable="@drawable/settings_switcher_off_clear_focus"
+        />
+
+    <!--un - focus-->
+    <item app:state_switcher_on="true"
+          android:state_focused="false"
+          android:drawable="@drawable/settings_switcher_on"
+        />
+
+    <item app:state_switcher_off="true"
+          android:state_focused="false"
+          android:drawable="@drawable/settings_switcher_off"
+        />
+    <item app:state_switcher_clean_on="true"
+          android:state_focused="false"
+          android:drawable="@drawable/settings_switcher_on_clear"
+        />
+
+    <item app:state_switcher_clean_off="true"
+          android:state_focused="false"
+          android:drawable="@drawable/settings_switcher_off_clear"
+        />
+
+</selector>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lemi.controller.lemigameassistance.view.TitleView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.lemi.controller.lemigameassistance.view.TextClock
+        android:id="@+id/title_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textSize="@dimen/mario_28sp" />
+
+    <ImageView
+        android:id="@+id/title_network"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/mario_10dp"
+        android:layout_toLeftOf="@id/title_clock"
+        android:src="@drawable/title_view_network" />
+
+    <ImageView
+        android:id="@+id/title_usb"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@id/title_network"
+        android:visibility="gone"
+        android:src="@drawable/title_usb" />
+
+    <ImageView
+        android:id="@+id/title_sdcard"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/title_usb"
+        android:src="@drawable/title_sdcard"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/title_gamepad"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/title_sdcard"
+        android:src="@drawable/title_gamepad"
+        android:visibility="gone" />
+
+</com.lemi.controller.lemigameassistance.view.TitleView>

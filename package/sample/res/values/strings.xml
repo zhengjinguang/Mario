@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Mario</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!--card id-->
+    <string name="item_location_column_num">item_location_column_num</string>
+    <string name="item_location_line_num">item_location_line_num</string>
+
+
+</resources>

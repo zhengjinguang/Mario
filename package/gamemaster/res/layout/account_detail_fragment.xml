@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/account_avatar"
+        android:layout_width="@dimen/mario_145dp"
+        android:layout_height="@dimen/mario_145dp"
+        android:layout_marginTop="@dimen/mario_100dp"
+        android:layout_marginLeft="@dimen/mario_282dp"
+        android:src="@drawable/gender_girl" />
+
+    <ImageView
+        android:id="@+id/account_change_gender"
+        android:layout_width="@dimen/mario_155dp"
+        android:layout_height="@dimen/mario_60dp"
+        android:focusable="true"
+        android:layout_below="@id/account_avatar"
+        android:layout_marginLeft="@dimen/mario_282dp"
+        android:layout_marginTop="@dimen/mario_10dp"
+        android:background="@drawable/account_gender_selector" />
+
+    <ImageView
+        android:id="@+id/account_lottery"
+        android:layout_width="@dimen/mario_191dp"
+        android:layout_height="@dimen/mario_72dp"
+        android:focusable="true"
+        android:layout_below="@id/account_change_gender"
+        android:layout_marginTop="@dimen/mario_100dp"
+        android:layout_marginLeft="@dimen/mario_282dp"
+        android:background="@drawable/account_lottery_selector" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/mario_72dp"
+        android:layout_below="@id/account_lottery"
+        android:layout_marginTop="@dimen/mario_30dp"
+        android:layout_marginLeft="@dimen/mario_282dp"
+        android:textSize="@dimen/mario_30sp"
+        android:textColor="@color/yellow"
+        android:text="@string/account_info_complete" />
+
+    <TextView
+        android:id="@+id/account_id"
+        style="@style/account_title"
+        android:layout_toRightOf="@id/account_avatar"
+        android:layout_marginTop="@dimen/mario_80dp"
+        android:text="@string/account_id" />
+
+    <TextView
+        android:id="@+id/account_nick_title"
+        style="@style/account_title"
+        android:layout_toRightOf="@id/account_avatar"
+        android:layout_below="@id/account_id"
+        android:text="@string/account_nick" />
+
+    <EditText
+        android:id="@+id/account_nick"
+        style="@style/account_text"
+        android:maxLength="20"
+        android:layout_below="@id/account_id" />
+
+    <TextView
+        android:id="@+id/account_phone_title"
+        style="@style/account_title"
+        android:layout_toRightOf="@id/account_avatar"
+        android:layout_below="@id/account_nick"
+        android:text="@string/account_phone" />
+
+    <EditText
+        android:id="@+id/account_phone"
+        style="@style/account_text"
+        android:inputType="phone"
+        android:maxLength="20"
+        android:hint="@string/account_phone_hint"
+        android:layout_below="@id/account_nick" />
+
+    <TextView
+        android:id="@+id/account_email_title"
+        style="@style/account_title"
+        android:layout_toRightOf="@id/account_avatar"
+        android:layout_below="@id/account_phone"
+        android:text="@string/account_email" />
+
+    <EditText
+        android:id="@+id/account_email"
+        style="@style/account_text"
+        android:inputType="textEmailAddress"
+        android:maxLength="30"
+        android:layout_below="@id/account_phone" />
+
+    <ImageView
+        android:id="@+id/account_save"
+        android:layout_width="@dimen/mario_285dp"
+        android:layout_height="@dimen/mario_72dp"
+        android:focusable="true"
+        android:layout_marginTop="@dimen/mario_10dp"
+        android:layout_toRightOf="@id/account_phone_title"
+        android:layout_marginLeft="@dimen/mario_10dp"
+        android:layout_below="@id/account_email"
+        android:gravity="center"
+        android:background="@drawable/account_save_selector" />
+
+</RelativeLayout>

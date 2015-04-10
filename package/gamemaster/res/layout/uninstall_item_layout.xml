@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lemi.controller.lemigameassistance.recycleview.item.UninstallItemView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="@dimen/mario_33dp"
+    android:layout_marginLeft="@dimen/mario_123dp"
+    android:layout_marginRight="@dimen/mario_123dp"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/mario_142dp"
+    >
+
+    <com.lemi.mario.image.view.AsyncImageView
+        android:id="@+id/uninstall_icon"
+        android:layout_width="@dimen/mario_120dp"
+        android:layout_height="@dimen/mario_120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/mario_70dp"/>
+
+    <TextView
+        android:id="@+id/uninstall_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mario_30dp"
+        android:layout_toRightOf="@id/uninstall_icon"
+        android:layout_alignTop="@id/uninstall_icon"
+        android:textColor="@color/selected"
+        android:textSize="@dimen/mario_30sp"/>
+
+    <TextView
+        android:id="@+id/uninstall_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mario_10dp"
+        android:layout_below="@id/uninstall_name"
+        android:layout_alignLeft="@id/uninstall_name"
+        android:textColor="@color/unselected"
+        android:textSize="@dimen/mario_23sp"/>
+
+    <Button
+        android:id="@+id/uninstall_manage_button"
+        android:layout_width="@dimen/mario_150dp"
+        android:layout_height="@dimen/mario_71dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/mario_10dp"
+        android:background="@drawable/button_selector"
+        android:layout_marginRight="@dimen/mario_30dp"
+        android:gravity="center"
+        android:text="@string/dialog_uninstall"
+        android:textColor="@color/white"
+        android:textSize="@dimen/mario_25sp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:clickable="true"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mario_1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/unselected"/>
+
+</com.lemi.controller.lemigameassistance.recycleview.item.UninstallItemView>

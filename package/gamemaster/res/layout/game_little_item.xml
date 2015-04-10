@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lemi.controller.lemigameassistance.view.GameItemView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/game_item_layout"
+        style="@style/subject_detail_game_item_layout"
+        >
+
+        <com.lemi.mario.image.view.AsyncImageView
+            android:id="@+id/game_item_icon"
+            android:layout_width="@dimen/mario_120dp"
+            android:layout_height="@dimen/mario_120dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_defualt"/>
+
+        <ImageView
+            android:id="@+id/game_item_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_installed"
+            android:layout_alignTop="@id/game_item_icon"
+            android:layout_alignRight="@id/game_item_icon"
+            android:layout_marginRight="@dimen/_5dp"
+            android:layout_marginTop="@dimen/_5dp"/>
+
+        <RelativeLayout
+            android:id="@+id/game_item_under_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/mario_24dp"
+            android:layout_alignLeft="@id/game_item_icon"
+            android:layout_alignRight="@id/game_item_icon"
+            android:layout_alignBottom="@id/game_item_icon"
+            android:visibility="invisible"
+            >
+
+            <ImageView
+                android:id="@+id/game_item_under_shadow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/down_bar_black"/>
+
+            <ImageView
+                android:id="@+id/game_item_operation_joystick"
+                android:layout_width="@dimen/mario_20dp"
+                android:layout_height="@dimen/mario_15dp"
+                android:src="@drawable/control_gamepad"
+                android:layout_centerVertical="true"
+                android:layout_alignLeft="@id/game_item_under_shadow"
+                android:layout_marginLeft="@dimen/mario_2dp"
+                android:scaleType="centerInside"/>
+
+            <ImageView
+                android:id="@+id/game_item_operation_control_panel"
+                android:layout_width="@dimen/mario_12dp"
+                android:layout_height="@dimen/mario_16dp"
+                android:src="@drawable/control_panel"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/game_item_operation_joystick"
+                android:layout_marginLeft="@dimen/mario_2dp"
+                android:scaleType="centerInside"/>
+
+            <ImageView
+                android:id="@+id/game_item_operation_mouse"
+                android:layout_width="@dimen/mario_20dp"
+                android:layout_height="@dimen/mario_15dp"
+                android:src="@drawable/control_mouse"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/game_item_operation_control_panel"
+                android:layout_marginLeft="@dimen/mario_2dp"
+                android:scaleType="centerInside"/>
+
+            <ImageView
+                android:id="@+id/game_item_download_icon"
+                android:layout_width="@dimen/mario_12dp"
+                android:layout_height="@dimen/mario_12dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/mario_6dp"
+                android:src="@drawable/download_icon"/>
+
+            <TextView
+                android:id="@+id/game_item_download_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/game_item_download_icon"
+                android:layout_marginRight="@dimen/mario_2dp"
+                android:textColor="@color/category_grid_item_text_normal"
+                android:textSize="@dimen/mario_15sp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/game_item_name"
+            android:layout_width="@dimen/mario_120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/game_item_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/mario_5dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="@color/category_grid_item_text_normal"
+            android:textSize="@dimen/mario_19sp"/>
+
+    </RelativeLayout>
+</com.lemi.controller.lemigameassistance.view.GameItemView>

@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+            jni.srcDirs = ['jni']
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':framework:base')
+    compile project(':framework:log')
+    compile project(':framework:udid')
+    compile project(':framework:image')
+    compile project(':framework:download')
+    compile project(':framework:appmanager')
+    compile project(':framework:rpc')
+    compile "com.android.support:recyclerview-v7:21.0.+"
+    compile "com.android.support:cardview-v7:21.0.+"
+}

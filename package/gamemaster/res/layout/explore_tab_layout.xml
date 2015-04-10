@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mario_93dp"
+        android:layout_marginTop="@dimen/mario_20dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mario_2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/mario_14dp"
+            android:layout_marginLeft="@dimen/mario_30dp"
+            android:layout_marginRight="@dimen/mario_30dp"
+            android:background="@drawable/main_title_line"
+            android:visibility="visible"/>
+
+        <com.astuetz.viewpager.extensions.PagerSlidingTabStrip
+            android:id="@+id/tabs"
+            android:layout_width="@dimen/mario_640dp"
+            android:layout_height="@dimen/mario_93dp"
+            android:layout_marginLeft="@dimen/mario_57dp"
+            style="@style/tab_strip_explore" />
+
+        <include
+            layout="@layout/main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/mario_36dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/mario_57dp"
+            android:layout_marginTop="@dimen/mario_31dp"
+            />
+    </RelativeLayout>
+
+    <com.lemi.controller.lemigameassistance.view.CommonViewPager
+        android:layout_centerHorizontal="true"
+        android:id="@+id/common_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_layout" />
+
+
+</RelativeLayout>

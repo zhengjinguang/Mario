@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lemi.controller.lemigameassistance.view.CategoryItemView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/category_item"
+        style="@style/category_item_layout"
+        >
+
+        <com.lemi.mario.image.view.AsyncImageView
+            android:id="@+id/category_item_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/mario_13dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/category_card_default"/>
+
+        <TextView
+            android:id="@+id/category_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@color/category_grid_item_text_normal"
+            android:textSize="@dimen/mario_19sp"/>
+
+    </RelativeLayout>
+</com.lemi.controller.lemigameassistance.view.CategoryItemView>

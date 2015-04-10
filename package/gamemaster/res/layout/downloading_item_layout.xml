@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lemi.controller.lemigameassistance.recycleview.item.DownloadingItemView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="@dimen/mario_33dp"
+    android:layout_marginLeft="@dimen/mario_123dp"
+    android:layout_marginRight="@dimen/mario_123dp"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/mario_142dp">
+
+    <com.lemi.mario.image.view.AsyncImageView
+        android:id="@+id/downloading_icon"
+        android:layout_width="@dimen/mario_120dp"
+        android:layout_height="@dimen/mario_120dp"
+        android:layout_marginLeft="@dimen/mario_70dp"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/downloading_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mario_30dp"
+        android:layout_toRightOf="@id/downloading_icon"
+        android:layout_alignTop="@id/downloading_icon"
+        android:textColor="@color/selected"
+        android:textSize="@dimen/mario_30sp" />
+
+    <TextView
+        android:id="@+id/downloading_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/downloading_name"
+        android:layout_marginLeft="@dimen/mario_30dp"
+        android:layout_marginTop="@dimen/mario_10dp"
+        android:layout_toRightOf="@id/downloading_icon"
+        android:textColor="@color/unselected"
+        android:textSize="@dimen/mario_23sp" />
+
+    <com.lemi.controller.lemigameassistance.view.NetAppButton
+        android:id="@+id/downloading_manage_download_button"
+        android:layout_width="@dimen/mario_150dp"
+        android:layout_height="@dimen/mario_71dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/mario_25sp"
+        android:background="@drawable/button_selector"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/mario_10dp"
+        android:layout_marginRight="@dimen/mario_30dp"
+        android:scaleType="fitXY"/>
+
+    <com.lemi.controller.lemigameassistance.view.NetAppCancelButton
+        android:id="@+id/downloading_cancel_button"
+        android:layout_width="@dimen/mario_150dp"
+        android:layout_height="@dimen/mario_71dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/mario_25sp"
+        android:background="@drawable/button_selector"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/downloading_manage_download_button"
+        android:layout_marginBottom="@dimen/mario_10dp"
+        android:scaleType="fitXY"
+        />
+
+    <com.lemi.controller.lemigameassistance.view.DownloadUnzipHorizontalBar
+        android:id="@+id/downloading_progressbar"
+        style="@style/MyProgressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mario_10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/mario_23dp"
+        android:layout_marginLeft="@dimen/mario_30dp"
+        android:layout_marginRight="@dimen/mario_70dp"
+        android:layout_toRightOf="@id/downloading_icon"
+        android:layout_toLeftOf="@id/downloading_cancel_button"
+        android:max="100"
+        android:progress="0"
+        android:visibility="visible" />
+
+    <com.lemi.controller.lemigameassistance.view.DownloadUnzipTextView
+        android:id="@+id/downloading_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/downloading_progressbar"
+        android:layout_alignRight="@id/downloading_progressbar"
+        android:layout_marginBottom="@dimen/mario_10dp"
+        android:textColor="@color/download_unzip_text_color_selector"
+        android:textSize="@dimen/mario_25sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mario_1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/unselected"/>
+
+</com.lemi.controller.lemigameassistance.recycleview.item.DownloadingItemView>

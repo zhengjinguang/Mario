@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="@dimen/mario_970dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/fragment_background">
+
+        <FrameLayout
+            android:id="@+id/mount_first_start_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/mount_first_start_button"
+                android:layout_width="@dimen/mario_290dp"
+                android:layout_height="@dimen/mario_95dp"
+                android:focusableInTouchMode="true"
+                android:focusable="true"
+                android:padding="@dimen/mario_14dp"
+                android:src="@drawable/first_start_button"
+                android:background="@drawable/first_start_button_focus_selector"
+                android:layout_marginTop="@dimen/mario_210dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <ImageView
+                android:layout_width="@dimen/mario_444dp"
+                android:layout_height="@dimen/mario_25dp"
+                android:layout_marginTop="@dimen/mario_382dp"
+                android:src="@drawable/first_start_tips"
+                android:layout_gravity="center_horizontal"/>
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/mount_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/back_button"
+                style="@style/back_button"/>
+
+            <com.lemi.mario.widget.helper.view.ActiveImageView
+                android:id="@+id/mount_start_button"
+                android:layout_width="@dimen/mario_198dp"
+                android:layout_height="@dimen/mario_65dp"
+                android:padding="@dimen/mario_9dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/mario_75dp"
+                android:background="@drawable/mount_start_button_focus_selector"
+                android:src="@drawable/mount_start_button_selector"
+                />
+
+            <LinearLayout
+                android:id="@+id/mount_dot_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/mount_start_button"
+                android:layout_marginTop="@dimen/mario_45dp"
+                android:layout_centerHorizontal="true">
+
+                <com.lemi.mario.widget.helper.view.ActiveImageView
+                    android:id="@+id/mount_check_dot"
+                    android:layout_width="@dimen/mario_15dp"
+                    android:layout_height="@dimen/mario_15dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/mount_dot_selector"/>
+
+                <com.lemi.mario.widget.helper.view.ActiveImageView
+                    android:id="@+id/mount_copy_line"
+                    android:layout_width="@dimen/mario_266dp"
+                    android:layout_height="@dimen/mario_4dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/mount_line_selector"/>
+
+                <com.lemi.mario.widget.helper.view.ActiveImageView
+                    android:id="@+id/mount_copy_dot"
+                    android:layout_width="@dimen/mario_15dp"
+                    android:layout_height="@dimen/mario_15dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/mount_dot_selector"/>
+
+                <com.lemi.mario.widget.helper.view.ActiveImageView
+                    android:id="@+id/mount_restart_line"
+                    android:layout_width="@dimen/mario_266dp"
+                    android:layout_height="@dimen/mario_4dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/mount_line_selector"/>
+
+                <com.lemi.mario.widget.helper.view.ActiveImageView
+                    android:id="@+id/mount_restart_dot"
+                    android:layout_width="@dimen/mario_15dp"
+                    android:layout_height="@dimen/mario_15dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/mount_dot_selector"/>
+
+            </LinearLayout>
+
+
+            <com.lemi.mario.widget.helper.view.ActiveImageView
+                android:id="@+id/mount_check_card"
+                android:layout_width="@dimen/mario_173dp"
+                android:layout_height="@dimen/mario_173dp"
+                android:layout_below="@+id/mount_dot_container"
+                android:layout_marginTop="@dimen/mario_20dp"
+                android:layout_marginLeft="@dimen/mario_112dp"
+                android:background="@drawable/mount_check_card_selector"/>
+
+            <com.lemi.mario.widget.helper.view.ActiveImageView
+                android:id="@+id/mount_copy_card"
+                android:layout_width="@dimen/mario_173dp"
+                android:layout_height="@dimen/mario_173dp"
+                android:layout_below="@+id/mount_dot_container"
+                android:layout_toRightOf="@+id/mount_check_card"
+                android:layout_marginTop="@dimen/mario_20dp"
+                android:layout_marginLeft="@dimen/mario_113dp"
+                android:background="@drawable/mount_copy_card_selector"/>
+
+            <com.lemi.mario.widget.helper.view.ActiveImageView
+                android:id="@+id/mount_restart_card"
+                android:layout_width="@dimen/mario_173dp"
+                android:layout_height="@dimen/mario_173dp"
+                android:layout_below="@+id/mount_dot_container"
+                android:layout_toRightOf="@+id/mount_copy_card"
+                android:layout_marginTop="@dimen/mario_20dp"
+                android:layout_marginLeft="@dimen/mario_113dp"
+                android:background="@drawable/mount_restart_card_selector"/>
+
+            <LinearLayout
+                android:id="@+id/mount_status_is_insert_container"
+                android:layout_below="@+id/mount_check_card"
+                android:layout_marginTop="@dimen/mario_30dp"
+                android:layout_marginLeft="@dimen/mario_112dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mount_status_is_insert"
+                    android:textSize="@dimen/mario_18sp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_vertical"/>
+
+                <com.lemi.mario.widget.helper.view.ActiveImageView
+                    android:id="@+id/mount_status_is_insert"
+                    android:layout_width="@dimen/mario_35dp"
+                    android:layout_height="@dimen/mario_23dp"
+                    android:background="@drawable/mount_check_selector"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/mount_status_is_fat32_container"
+                android:layout_below="@+id/mount_status_is_insert_container"
+                android:layout_marginTop="@dimen/mario_20dp"
+                android:layout_marginLeft="@dimen/mario_112dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mount_status_is_fat32"
+                    android:textSize="@dimen/mario_18sp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_vertical"/>
+
+                <com.lemi.mario.widget.helper.view.ActiveImageView
+                    android:id="@+id/mount_status_is_fat32"
+                    android:layout_width="@dimen/mario_35dp"
+                    android:layout_height="@dimen/mario_23dp"
+                    android:background="@drawable/mount_check_selector"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mount_status_is_writable_container"
+                android:layout_below="@+id/mount_status_is_fat32_container"
+                android:layout_marginTop="@dimen/mario_20dp"
+                android:layout_marginLeft="@dimen/mario_112dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mount_status_is_writable"
+                    android:textSize="@dimen/mario_18sp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_vertical"/>
+
+                <com.lemi.mario.widget.helper.view.ActiveImageView
+                    android:id="@+id/mount_status_is_writable"
+                    android:layout_width="@dimen/mario_35dp"
+                    android:layout_height="@dimen/mario_23dp"
+                    android:background="@drawable/mount_check_selector"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/mount_status_is_mount_complete_container"
+                android:layout_below="@+id/mount_restart_card"
+                android:layout_marginTop="@dimen/mario_30dp"
+                android:layout_marginLeft="@dimen/mario_684dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mount_complete"
+                    android:textSize="@dimen/mario_18sp"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_vertical"/>
+
+                <com.lemi.mario.widget.helper.view.ActiveImageView
+                    android:id="@+id/mount_status_is_mount_complete"
+                    android:layout_width="@dimen/mario_35dp"
+                    android:layout_height="@dimen/mario_23dp"
+                    android:background="@drawable/mount_check_selector"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <include
+                android:id="@+id/mount_loading"
+                android:layout_width="@dimen/mario_42dp"
+                android:layout_height="@dimen/mario_42dp"
+                android:layout_marginTop="@dimen/mario_551dp"
+                android:layout_centerHorizontal="true"
+                layout="@layout/loading_view"/>
+
+            <include
+                android:id="@+id/mount_tips"
+                android:layout_width="@dimen/mario_424dp"
+                android:layout_height="@dimen/mario_76dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/mario_30dp"
+                layout="@layout/mount_tips_view"/>
+
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/mount_qr_code_background">
+
+        <ImageView
+            android:id="@+id/mount_qr_code_src"
+            android:layout_width="@dimen/mario_206dp"
+            android:layout_height="@dimen/mario_197dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/mount_qr_code"
+            android:layout_marginTop="@dimen/mario_113dp"
+            />
+
+        <TextView
+            android:layout_below="@+id/mount_qr_code_src"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mario_20dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/mount_qr_code_tips"
+            android:textSize="@dimen/mario_22sp"
+            android:textColor="@color/white"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/mario_212dp"
+            android:layout_height="@dimen/mario_64dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="133dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/mount_qr_code_tips"
+            />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+

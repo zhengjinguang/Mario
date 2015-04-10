@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lemi.mario.widget.helper.view.InstallGameCard
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/mario_219dp"
+    android:layout_height="@dimen/mario_219dp"
+    android:layout_marginLeft="@dimen/mario_1dp">
+
+    <com.lemi.mario.image.view.AsyncImageView
+        android:id="@+id/install_game_poster"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/mario_10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/install_game_card_focus_selector"/>
+
+    <ImageView
+        android:id="@+id/install_game_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/mario_10dp"
+        android:src="@drawable/install_game_shadow"/>
+
+    <include
+        android:id="@+id/install_game_loading"
+        android:layout_width="@dimen/mario_95dp"
+        android:layout_height="@dimen/mario_95dp"
+        android:layout_gravity="center"
+        layout="@layout/loading_view"/>
+
+</com.lemi.mario.widget.helper.view.InstallGameCard>
+
